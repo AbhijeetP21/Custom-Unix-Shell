@@ -2,9 +2,9 @@
   
 *A minimal Unix-like shell supporting command execution, piping, redirections, background execution, and command history.*
 
-## 📌 Overview
+## Overview
 This project is a **custom Unix shell implementation** that supports various shell functionalities, including command execution, piping, redirections, background execution, logical operators, and command history.
-## 🔧 Features Implemented
+## Features Implemented
 ### ✅ Basic Command Execution
 - Supports execution of external programs (e.g., `ls`, `pwd`, `echo`, `whoami`, `cd`).
 
@@ -51,7 +51,7 @@ This project is a **custom Unix shell implementation** that supports various she
   !1  # Executes the first command in history
   ```
 
-## 🚀 How to Compile and Run
+## 🚀 Compile and Run
 ### 1️⃣ Compile the Shell
 ```sh
 gcc sh.c -o utsh
@@ -61,7 +61,7 @@ gcc sh.c -o utsh
 ./utsh
 ```
 
-## 🛠 Example Commands
+## Example Commands
 ```sh
 utsh$ ls
 utsh$ pwd
@@ -75,16 +75,16 @@ utsh$ ls nonexistent || echo "Command failed"
 utsh$ !1  # Executes the first command in history
 ```
 
-## 📌 Notes
+## Notes
 - This shell does **not** support advanced features like job control (`fg`, `bg`, `kill`).
 - It assumes valid input formats and does not handle deeply nested piping.
 
-## 🎥 Demo
+## Demo
 <img width="765" alt="image" src="https://github.com/user-attachments/assets/b27a96fb-5053-4c02-a4ee-b41b739dd698" />
 
 
-## 📜 License
+## License
 This project is developed as part of **CS5460/6460 Operating Systems Assignment**.
 
-## 🔥 Credit
+## Credit
 Developed by **Abhijeet Pachpute** 😎
