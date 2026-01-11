@@ -1,14 +1,14 @@
-# Custom Unix Shell Implementation 🚀
+# Custom Unix Shell Implementation
   
 *A minimal Unix-like shell supporting command execution, piping, redirections, background execution, and command history.*
 
 ## Overview
 This project is a **custom Unix shell implementation** that supports various shell functionalities, including command execution, piping, redirections, background execution, logical operators, and command history.
 ## Features Implemented
-### ✅ Basic Command Execution
+### Basic Command Execution
 - Supports execution of external programs (e.g., `ls`, `pwd`, `echo`, `whoami`, `cd`).
 
-### ✅ Input and Output Redirection
+### Input and Output Redirection
 - **Output Redirection (`>`):** Redirects command output to a file:  
   ```sh
   echo "Hello" > file.txt
@@ -22,20 +22,20 @@ This project is a **custom Unix shell implementation** that supports various she
   cat < file.txt
   ```
 
-### ✅ Piping (`|`)
+### Piping (`|`)
 - Allows connecting multiple commands by passing output from one command as input to another:  
   ```sh
   ls | wc -l
   ```
 
-### ✅ Background Execution (`&`)
+### Background Execution (`&`)
 - Enables running commands in the background without blocking the shell:  
   ```sh
   sleep 5 &
   ```
 - Displays the process ID (`PID`) of background processes.
 
-### ✅ Logical Operators (`&&` and `||`)
+### Logical Operators (`&&` and `||`)
 - **AND (`&&`)**: Executes the second command **only if** the first one succeeds:  
   ```sh
   ls && echo "Success"
@@ -45,18 +45,18 @@ This project is a **custom Unix shell implementation** that supports various she
   ls nonexistent || echo "Failed"
   ```
 
-### ✅ Command History (`!n`)
+### Command History (`!n`)
 - Allows executing previous commands using `!n`, where `n` is the command number:  
   ```sh
   !1  # Executes the first command in history
   ```
 
-## 🚀 Compile and Run
-### 1️⃣ Compile the Shell
+## Compile and Run
+### Compile the Shell
 ```sh
 gcc sh.c -o utsh
 ```
-### 2️⃣ Run the Shell
+### Run the Shell
 ```sh
 ./utsh
 ```
